@@ -13,6 +13,7 @@
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
 		<link rel="stylesheet" type="text/css" href="css/content.css" />
 		<script src="js/modernizr.custom.js"></script>
+		<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
 	</head>
 	<body>
 		<div class="container">
@@ -158,6 +159,9 @@
 						// escape
 						$('.active .icon-close').click();
 					}
+				});
+				$('.modal').click(function() {
+					$('.active .icon-close').click();
 				});
 			})();
 		</script>
