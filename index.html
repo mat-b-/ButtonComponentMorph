@@ -152,6 +152,13 @@
 				[].slice.call( document.querySelectorAll( 'form button' ) ).forEach( function( bttn ) { 
 					bttn.addEventListener( 'click', function( ev ) { ev.preventDefault(); } );
 				} );
+				
+				$(document).keyup(function(e) {
+					if (e.keyCode == 27) {
+						// escape
+						$('.active .icon-close').click();
+					}
+				});
 			})();
 		</script>
 	</body>
