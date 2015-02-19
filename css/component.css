@@ -119,7 +119,7 @@
 }
 
 /* Morph Button Style: Modal */
-.morph-button-modal::before {
+.morph-button-modal .modal {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -132,14 +132,15 @@
 	-webkit-transition: opacity 0.5s;
 	transition: opacity 0.5s;
 	pointer-events: none;
+	display: block;
 }
 
-.morph-button-modal.open::before {
+.morph-button-modal.open .modal {
 	opacity: 1;
 	pointer-events: auto;
 }
 
-.morph-button-modal.active::before {
+.morph-button-modal.active .modal {
 	z-index: 1800;
 }
 
